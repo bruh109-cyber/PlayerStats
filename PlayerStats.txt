@@ -1,0 +1,60 @@
+%assign STRUCT_OFFSET 0
+
+
+PLAYER_ID equ STRUCT_OFFSET
+%assign STRUCT_OFFSET STRUCT_OFFSET + 4  ;IDs are a 4-byte Double Word (DWORD)
+
+PLAYER_SCORE equ STRUCT_OFFSET
+%assign STRUCT_OFFSET STRUCT_OFFSET + 4 ;Scores are 4-byte DWORD
+
+PLAYER_HEALTH equ STRUCT_OFFSET
+%assign STRUCT_OFFSET STRUCT_OFFSET + 1 ;Health is a 1-byte Byte (BD)
+
+PLAYER_STATUS equ STRUCT_OFFSET
+%assign STRUCT_OFFSET STRUCT_OFFSET + 1 ;status flags are 1-byte
+
+section .text
+global _start
+
+_start:
+    mov eax, [ebx + PLAYER_ID]
+    mov edx, [ebx + PLAYER_SCORE]
+    mov cl, [ebx + PLAYER_HEALTH]
+    
+    
+    mov ecx, TOTAL_PLAYER_SIZE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
